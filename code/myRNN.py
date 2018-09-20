@@ -230,7 +230,7 @@ output, loss = myRNN.actualTrainingEx(category_tensor, line_tensor)
 print("OUTPUT", output, loss)
 currentLoss += loss #cumlating the loss
 guess, guess_i = myRNN.highestLanguage(output, countryDictionary) #guess and guess index
-if (guess == category):
+if (guess == category): #print if the guessed language of origin is correct or not
     print("CORRECT")
     print(category)
 else:
