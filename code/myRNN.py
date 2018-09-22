@@ -7,7 +7,7 @@ import torch as t
 import torch.nn as nn
 import random
 
-
+#the class constructor
 class myRNN(nn.Module):
     def __init__(self, inputSize, hiddenSize, outputSize): #constructor
         super(myRNN, self).__init__()
